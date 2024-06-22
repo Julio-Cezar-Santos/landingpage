@@ -29,3 +29,91 @@ html {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
 }
+
+body{
+    background-color: var(--bg-color-01);
+    color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1.1rem ;
+    background-color: var(--bg-color-02);
+    text-align: center;
+}
+
+.nav a{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    transition: 0.4s;
+}
+
+.nav a:hover{
+    color: var(--main-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 6rem 6rem 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+main{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home{
+    position: relative;
+    top: 50%;
+}
+
+.home-content h1{
+    font-weight: 700;
+    font-size: 2.7rem;
+    line-height: 1.3;
+}
+
+.home-content h3{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.home-content p{
+    text-align: justify;
+    margin: 1.5rem 0;
+}
+
+.home-content{
+    float: left;
+    width: 35%;
+}
+
+.home-img{
+    float: right;
+    width: 50%;
+    border-right: solid 0.6rem;
+    border-bottom: solid 0.6rem;
+    border-image: linear-gradient(135deg, transparent 55%,var(--main-color)) 1;
+}
+
+.home-img img, .about-img img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
