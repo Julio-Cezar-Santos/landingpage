@@ -1,9 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const menuBtn = document.getElementById('menuBtn');
-    const navList = document.getElementById('navList');
-
-    menuBtn.addEventListener('click', function() {
-        navList.classList.toggle('active');
-        menuBtn.classList.toggle('active');
-    });
+const menuHamburger = document.querySelector('.menu-hamburguer');
+menuHamburger.addEventListener('click', () => {
+    toggleMenu();  
 });
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    menuHamburger.classList.toggle('change');
+
+    if (menuHamburger.classList.contains('change')) {
+        nav.style.display = 'block';
+    } else {
+        nav.style.display = 'none';
+    }
+}
